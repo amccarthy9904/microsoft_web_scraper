@@ -39,6 +39,7 @@ def start():
     text = text.translate(str.maketrans(' ', ' ', string.punctuation))
     text = text.translate(str.maketrans(' ', ' ', string.digits))
     text = text.split(' ')
+    
     c = Counter()
     l = 0
     for word in text:
